@@ -1,0 +1,72 @@
+
+  .glass-container {
+    background: rgba(188, 184, 177, 0.1);
+    backdrop-filter: blur(15px); 
+    -webkit-backdrop-filter: blur(10px);
+    border-radius: 50px;
+    border: 1px solid #EAE2B7;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); 
+    position: absolute;
+    top: 7.5rem;
+    left: 50%; 
+    transform: translateX(-50%); 
+    max-width: 90rem;
+    width: 100%;
+    padding: 2rem;
+}
+
+/* iPad (1024px and below) */
+@media (max-width: 1024px) {
+    .glass-container {
+        top: 6rem;
+        max-width: 95%;
+        border-radius: 30px;
+        padding: 1rem;
+    }
+}
+
+@media (max-width: 1366px) and (orientation: landscape) {
+    .glass-container {
+        top: 6rem;
+        width: 90%; /* Reduce width so there's space on both sides */
+        max-width: 80rem; /* Ensures it doesn't get too wide */
+        border-radius: 30px;
+        padding: 1.5rem;
+    }
+}
+
+/* @media (max-width: 600px) {
+    .glass-container {
+        top: 6rem;
+        width: 90%;
+        max-width: 80rem; 
+        border-radius: 30px;
+        padding: 1.5rem;
+    }
+} */
+
+/* 📱 Mobile (Portrait) */
+@media (max-width: 600px) {
+    .glass-container {
+        top: 0;
+        width: 100%;
+        max-width: 100%;
+        margin: 1% 0 0 0;
+        border-radius: 0;
+        backdrop-filter: blur(10px); 
+        padding: 1rem;
+        border: none;
+    }
+}
+
+/* 📱 Mobile (Landscape) */
+@media (max-width: 812px) and (orientation: landscape) {
+    .glass-container {
+        top: 5rem;
+        width: 85%;
+        max-width: 85%;
+        margin: 0 auto;
+        border-radius: 25px;
+        padding: 1.2rem;
+    }
+}

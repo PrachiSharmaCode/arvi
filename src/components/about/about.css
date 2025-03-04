@@ -1,0 +1,173 @@
+.about-container {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    align-content: center;
+    margin: 12% 0 0 0;
+    gap: 5%;
+}
+
+.tag-line-text {
+    font-size: 4rem;
+    font-weight: bolder;
+    text-align: left;
+    color: var(--beige);
+    letter-spacing: 1px;
+}
+
+.about-description {
+    width: 30%;
+}
+
+.about-description-heading{
+    font-weight: 800;
+    color: var(--orange);
+    font-size: 14px;
+    text-align: left;
+}
+
+.about-description-text {
+    text-align: justify;
+    line-height: 1.5;
+    font-weight: 800;
+    color: var(--orange);
+    letter-spacing: 0.5px;
+    width: 100%;
+    margin-top: 5%;
+    font-size: 14px;
+}
+
+.connection-call{
+    margin-top: 5%;
+    text-align: center;
+}
+
+.connection-call-button{
+    margin: 5%;
+    padding: 10px 1% 10px 1%;
+    border-radius: 10px;
+    background-color: var(--yellow);
+    color: var(--black);
+    letter-spacing: 1.5px;
+    border: 1px solid var(--yellow);
+    font-weight: 500;
+    cursor: pointer;
+    font-size: 14.5px;
+    transition: all 0.3s ease-in-out;
+}
+
+.connection-call-button:hover{
+    transform: scale(1.05);
+    background: var(--yellow);
+    color: var(--black);
+    transition: all 0.3s ease-in-out;
+    
+}
+
+.connection-call-text{
+    font-size: 16px;
+    letter-spacing: 1.5px;
+    font-weight: 800;
+    color: var(--yellow);
+}
+
+/* iPad (1024px and below) */
+@media (max-width: 1024px) {
+
+    .about-container {
+        margin: 20% 0 5% 0;
+        gap: 2%;
+    }
+
+
+    .tag-line-text {
+        font-size: 3rem;
+        letter-spacing: 0.5px;
+    }
+
+    .about-description {
+        width: 40%;
+    }
+    
+    .about-description-text {
+        line-height: 1.;
+        font-weight: 500;
+        letter-spacing: 0px;
+        margin-top: 2%;
+    }
+}
+
+@media (max-width: 900px) {
+    .about-container {
+        margin: 10% 0 5% 0;
+        gap: 2%;
+    }
+}
+
+/* 📱 Mobile (Portrait) */
+@media (max-width: 600px) {
+    .about-container {
+        margin: 1% 0 5% 0;
+        flex-direction: column;
+        justify-content: left;
+        gap: 20px;
+    }
+
+    .tag-line{
+        margin-top: 20%;
+    }
+
+    .tag-line-text {
+        font-size: 1.5rem;
+        letter-spacing: 1px;
+        color: var(--orange);
+        font-style: italic;
+    }
+
+    .about-description {
+        width: 90%;
+        
+    }
+    
+    .about-description-text {
+        line-height: 1.5;
+        font-weight: 500;
+        letter-spacing: 0;
+        margin-top: 2%;
+        font-size: 12px;
+        text-align: center;
+        color: var(--beige);
+    }
+
+    .about-description-heading{
+        font-weight: 800;
+        color: var(--beige);
+        font-size: 14px;
+        margin-top: 5%;
+        text-align: center;
+    }
+    
+    .connection-call-text{
+        font-size: 12px;
+        letter-spacing: 1px;
+        font-weight: 500;
+    }
+
+    .connection-call-button{
+        margin: 10%;
+        padding: 10px 2% 10px 2%;
+        border-radius: 5px;
+        letter-spacing: 1px;
+        border: 1px solid var(--yellow);
+        font-weight: 500;
+        font-size: 12px;
+    }
+    
+}
+
+/* 📱 Mobile (Landscape) */
+@media (max-width: 812px) and (orientation: landscape) {
+  
+}
+
+

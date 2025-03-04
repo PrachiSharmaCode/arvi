@@ -1,0 +1,255 @@
+.service-contaner {
+    margin: 5% 5% 5% 5%;
+}
+
+.serivces-card-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+}
+
+@keyframes gradientAnimation {
+    0% {
+        background-position: 0% 50%;
+    }
+
+    50% {
+        background-position: 100% 50%;
+    }
+
+    100% {
+        background-position: 0% 50%;
+    }
+}
+
+.section-heading {
+    color: var(--beige);
+    margin: 0 0 5% 0;
+    font-size: 18px;
+    letter-spacing: 1.5px;
+}
+
+.heading {
+    color: #EAE2B7;
+    letter-spacing: 1px;
+    font-size: 18px;
+}
+
+.card {
+    height: 350px;
+    width: 300px;
+    margin: 1%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    justify-content: center;
+    align-content: center;
+    backdrop-filter: blur(15px);
+    -webkit-backdrop-filter: blur(10px);
+    padding: 12px;
+    background-color: var(--beige);
+    border-top-right-radius: 50px;
+    border-bottom-right-radius: 50px;
+    border-bottom-left-radius: 50px;
+    transition: background-color 0.3s ease-in-out;
+    cursor: pointer;
+    opacity: 0.9;
+    /* outline: 2px solid var(--orange);
+    outline-offset: -10px; */
+    
+}
+
+.card:hover {
+    background-color: var(--orange);
+    outline: none;
+}
+
+.card p {
+    transition: color 0.5s ease-in-out, transform 0.5s ease-in-out;
+}
+
+.card:hover p {
+    color: black;
+    transform: scale(1.05);
+}
+
+
+.card:hover .top-circle {
+    background-color: var(--beige);
+}
+
+.card:hover .service-contact-button {
+    color: var(--black);
+    font-size: 500;
+    text-decoration: underline;
+}
+
+.service-contact-button {
+    position: absolute;
+    bottom: 30px;
+    margin: 10% 0 0 0;
+    background-color: transparent;
+    padding: 10px 5% 10px 5%;
+    border: none;
+    border-radius: 10px;
+    color: var(--black);
+    letter-spacing: 1px;
+    font-weight: 500;
+    font-size: 14px;
+    cursor: pointer;
+    transition: all 0.1s ease-in-out;
+}
+
+.service-contact-button:hover {
+    transform: scale(1.1);
+    color: var(--black);
+    font-weight: 500;
+    transition: all 0.3s ease-in-out;
+}
+
+.top-circle {
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 120px;
+    width: 120px;
+    border-bottom-right-radius: 100%;
+    background-color: var(--orange);
+    z-index: -1;
+    transition: background-color 0.5s ease-in-out;
+}
+
+.service-icon {
+    position: absolute;
+    top: 25%;
+    left: 25%;
+    font-size: 2rem !important;
+}
+
+@keyframes softGlow {
+    0% {
+        box-shadow: 0 0 15px rgba(0, 123, 255, 0.1);
+    }
+
+    50% {
+        box-shadow: 0 0 25px rgba(0, 123, 255, 0.2);
+    }
+
+    100% {
+        box-shadow: 0 0 15px rgba(0, 123, 255, 0.1);
+    }
+}
+
+@keyframes gradientAnimation {
+    0% {
+        background-position: 0% 50%;
+    }
+
+    50% {
+        background-position: 100% 50%;
+    }
+
+    100% {
+        background-position: 0% 50%;
+    }
+}
+
+/* 
+.service-img{
+    text-align: center;
+    height: 500px;
+    margin: 1%;
+    filter: grayscale(100%);
+  
+} */
+
+.service-name {
+    color: var(--black);
+    letter-spacing: 2px;
+    line-height: 1.5;
+    font-weight: bold;
+    font-size: 18px;
+}
+
+@media (max-width: 600px) {
+
+    .service-contaner {
+        margin: 10% 0 0 0%;
+    }
+
+    .serivces-card-container {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-around;
+    }
+
+
+    .card {
+        height: 250px;
+        width: 170px;
+        margin: 1% 0 5% 0;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+        justify-content: center;
+        align-content: center;
+        backdrop-filter: blur(15px);
+        -webkit-backdrop-filter: blur(10px);
+        padding: 12px;
+        border-top-right-radius: 25px;
+        border-bottom-right-radius: 25px;
+        border-bottom-left-radius: 25px;
+        background-color: var(--beige);
+        transition: background-color 0.3s ease-in-out;
+        cursor: pointer;
+        opacity: 0.9;
+    }
+
+    .top-circle {
+        position: absolute;
+        top: 0;
+        left: 0;
+        height: 80px;
+        width: 80px;
+        border-bottom-right-radius: 100%;
+        background-color: var(--orange);
+        z-index: -1;
+        transition: background-color 0.5s ease-in-out;
+    }
+
+    .service-icon {
+        position: absolute;
+        top: 25%;
+        left: 20%;
+        font-size: 1.7rem !important;
+    }
+    
+
+    .service-name {
+        letter-spacing: 0;
+        font-size: 12px;
+    }
+
+    .service-description {
+        font-size: 12px;
+    }
+
+    .service-contact-button {
+        position: absolute;
+        bottom: 30px;
+        /* left: 0; */
+        margin: 10% 0 0 0;
+        background-color: transparent;
+        padding: 10px 5% 10px 5%;
+        border: none;
+        border-radius: 10px;
+        color: var(--orange);
+        letter-spacing: 0;
+        font-weight: 800;
+        font-size: 12px;
+        cursor: pointer;
+        transition: all 0.1s ease-in-out;
+    }
+}

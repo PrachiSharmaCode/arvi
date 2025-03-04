@@ -1,0 +1,48 @@
+.backdrop-container {
+    display: flex;
+    justify-content: center;
+    gap: 10%;
+    flex-wrap: nowrap;
+    text-align: center;
+    padding: 0;
+    width: 100%;
+    max-width: 90rem;
+}
+
+.backdrop-letter {
+    color: #EAE2B7;
+    opacity: 0.2;
+    font-size: 18rem;
+    margin-top: -8%;
+}
+
+@media (max-width: 768px) {
+    .backdrop-letter {
+        color: #EAE2B7;
+        opacity: 0.2;
+        font-size: 14rem;
+        margin-top: -10%;
+    }
+}
+
+@media (max-width: 600px) {
+    .backdrop-container {
+        position: fixed;
+        display: flex;
+        justify-content: center;
+        gap: 0;
+        flex-wrap: nowrap;
+        width: 100%;
+        max-width: 100%;
+
+    }
+
+
+    .backdrop-letter {
+        color: var(--beige);
+        opacity: 0.2;
+        font-size: 7rem;
+        margin-top: 92%;
+        width: 25%;
+    }
+}

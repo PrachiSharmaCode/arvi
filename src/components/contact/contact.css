@@ -1,0 +1,214 @@
+.contact-container {
+    position: relative;
+    margin: 15% 8% 5% 8%;
+    padding: 5% 0 5% 0;
+    /* padding: 5%; */
+    background-color: var(--beige);
+    border-bottom-left-radius: 50px;
+    border-bottom-right-radius: 50px;
+    border-top-right-radius: 50px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    align-items: center;
+    align-content: center;
+    outline: 2px solid var(--yellow);
+    outline-offset: -12px;
+}
+
+
+.contact-top-circle {
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 200px;
+    width: 200px;
+    background-color: var(--yellow);
+    border-bottom-right-radius: 100%;
+    z-index: 0;
+}
+
+.contact-form {
+    border-radius: 20px;
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+    justify-content: center;
+    align-content: center;
+    gap: 20px;
+    transition: all 0.5s ease-in-out;
+    z-index: 1;
+}
+
+.ack-message {
+    color: var(--blue);
+    font-size: 18px;
+    letter-spacing: 1px;
+    transition: all 0.5s ease-in-out;
+}
+
+
+.input-field {
+    padding: 3%;
+    width: 400px;
+    border-radius: 10px;
+    border: 1px solid var(--yellow);
+    outline-offset: 3px;
+    font-size: 14px;
+}
+
+.input-field:focus {
+    border: none !important;
+    outline: 0.5px solid var(--blue);
+}
+
+.message-input {
+    height: 150px;
+}
+
+.contact-text-container {
+    text-align: center;
+    align-items: center;
+    align-content: center;
+    z-index: 1;
+
+}
+
+.contact-button {
+    padding: 3% 10%;
+    border-radius: 20px;
+    border: none;
+    background-color: var(--blue);
+    color: var(--white);
+    align-self: center;
+    font-size: 14px;
+    font-weight: bold;
+    letter-spacing: 1px;
+    cursor: pointer;
+}
+
+.contact-button:hover {
+    transform: scale(1.05);
+}
+
+.contact-heading {
+    color: var(--blue);
+    font-size: 2rem;
+    font-weight: bolder;
+    letter-spacing: 1.5px;
+}
+
+.social-icon-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: 5% 0 10% 0;
+    justify-content: center
+}
+
+.social-icon-row {
+    display: flex;
+    margin-top: 20px;
+
+    flex-direction: row;
+    gap: 20px;
+}
+
+.social-icon {
+    background-color: var(--blue);
+    font-size: 4rem !important;
+    padding: 20% !important;
+    color: var(--white);
+    border-top-right-radius: 20px;
+    border-bottom-right-radius: 20px;
+    border-bottom-left-radius: 20px;
+    cursor: pointer;
+}
+
+.social-icon:hover {
+    transform: scale(1.05);
+}
+
+.error-message {
+    color: var(--red);
+    font-size: 12px;
+}
+
+@media (max-width: 1050px) {
+
+    .social-icon {
+        font-size: 3rem !important;
+    }
+
+
+    .social-icon-row {
+        gap: 15px;
+    }
+
+    .contact-form {
+        margin: 5%;
+        gap: 10px;
+        transition: all 0.5s ease-in-out;
+    }
+
+}
+
+@media (max-width: 480px) {
+
+    .contact-container {
+        position: relative;
+        margin: 30% 1% 5% 1%;
+        outline: 1.5px solid var(--yellow);
+        outline-offset: -8px;
+    }
+
+    .contact-form {
+        margin: 5%;
+        gap: 10px;
+        transition: all 0.5s ease-in-out;
+    }
+
+    .input-field {
+        padding: 3%;
+        width: 300px;
+        border-radius: 5px;
+        border: 1px solid var(--yellow);
+        outline-offset: 3px;
+        font-size: 12px;
+    }
+
+    .social-icon-container {
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        gap: 10px;
+        margin: 5% 0 5% 0;
+        justify-content: center
+    }
+
+    .social-icon-row {
+        display: flex;
+        margin-top: 5px;
+        flex-direction: row;
+        gap: 10px;
+    }
+
+    .contact-heading {
+        color: var(--blue);
+        font-size: 18px;
+        font-weight: bolder;
+        letter-spacing: 1px;
+    }
+
+    .contact-message {
+        font-size: 12px;
+    }
+
+    .ack-message {
+        margin: 20% 0 20% 0;
+        color: var(--blue);
+        font-size: 14px;
+        letter-spacing: 1px;
+        transition: all 0.5s ease-in-out;
+    }
+}
